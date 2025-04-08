@@ -1,5 +1,11 @@
-# Camino
+![Camino Preview](logo.png)
+
+---
+
+# Pilgrim - The Ignatian Journey
+
 An immersive WebXR pilgrimage inspired by the Spiritual Exercises of St. Ignatius.
+
 
 ## Features
 - Gamified mission-based meditations
@@ -9,3 +15,4 @@ An immersive WebXR pilgrimage inspired by the Spiritual Exercises of St. Ignatiu
 
 ## Getting Started
 Instructions coming soon for dev setup, backend/frontend split, and production deployment.
+
