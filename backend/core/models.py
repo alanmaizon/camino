@@ -31,14 +31,15 @@ class Meditation(models.Model):
         return f"{self.mission.title} - {self.title}"
 
 
-class Progress(models.Model):
+class UserProgress(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    retreat = models.ForeignKey(Retreat, on_delete=models.CASCADE)
     meditation = models.ForeignKey(Meditation, on_delete=models.CASCADE)
     completed = models.BooleanField(default=False)
-    completed_at = models.DateTimeField(null=True, blank=True)
+    unlocked_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         unique_together = ('user', 'meditation')
 
     def __str__(self):
-        return f"{self.user.username} - {self.meditation.title} - {'✅' if self.completed else '🚧'}"
+        return f"{self.user.username} - {self.meditation.title}"

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Retreat, Mission, Meditation, Progress
+from .models import Retreat, Mission, Meditation, UserProgress
 from django.utils import timezone
 
 class MeditationSerializer(serializers.ModelSerializer):
@@ -24,11 +24,11 @@ class RetreatSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'description', 'order', 'missions', 'unlocked_by_default']
 
 
-class ProgressSerializer(serializers.ModelSerializer):
+class UserProgressSerializer(serializers.ModelSerializer):
     meditation = MeditationSerializer(read_only=True)
 
     class Meta:
-        model = Progress
+        model = UserProgress
         fields = ['id', 'meditation', 'completed', 'completed_at']
         read_only_fields = ['completed_at']
 
