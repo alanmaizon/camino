@@ -111,23 +111,3 @@ Check the `docs/planning.md` for:
 
 ---
 
-## 💬 Why This Matters
-
-CaminoXR showcases how frontend skills can bridge creativity, accessibility, and technical rigor. It also highlights:
-
-* Team collaboration (UX designer + content lead)
-* Clear planning and feasibility communication
-* XR interaction development for real user engagement
-
----
-
-## 👤 Author
-
-Developed by \alanmaizon, frontend developer passionate about immersive tech, education, and spiritual design.
-
-```
-
-Let me know your GitHub username if you want a contributor section or if you’d like a badge-friendly README version (build passing, license, etc).
-```
-
-
